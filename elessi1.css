@@ -1,0 +1,1057 @@
+/* Typography resets */
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+}
+
+/* Default Link Styles */
+a {
+  color: #333333;
+  text-decoration: none;
+  line-height: inherit;
+}
+a:hover, a:focus {
+  color: #f76b6a;
+}
+a img {
+  border: none;
+}
+
+/* Default paragraph styles */
+p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 100%;
+  line-height: 1.6;
+  margin-bottom: 1.37931em;
+  text-rendering: optimizeLegibility;
+}
+p aside {
+  font-size: 0.96552em;
+  line-height: 1.35;
+  font-style: italic;
+}
+
+/* Default header styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.1931em;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-size: 75%;
+  color: gray;
+  line-height: 0;
+}
+
+h1 {
+  font-size: 1.24138em;
+}
+
+h2 {
+  font-size: 1.10345em;
+}
+
+h3 {
+  font-size: 1.31034em;
+}
+
+h4 {
+  font-size: 1.03448em;
+}
+
+h5 {
+  font-size: 1.17241em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+hr {
+  border: solid #eeeeee;
+  border-width: 1px 0 0;
+  clear: both;
+  height: 0;
+}
+
+/* Helpful Typography Defaults */
+em,
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+strong,
+b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+small {
+  font-size: 75%;
+  line-height: inherit;
+}
+
+code {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-weight: bold;
+  color: #7f0a0c;
+}
+
+/* Lists */
+ul,
+ol,
+dl {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 1.37931em;
+  list-style-position: inside;
+  font-family: inherit;
+}
+
+ul, ol {
+  margin-left: 0;
+}
+ul.no-bullet, ol.no-bullet {
+  margin-left: 0;
+}
+
+/* Unordered Lists */
+ul li ul,
+ul li ol {
+  margin-left: 1.37931em;
+  margin-bottom: 0;
+  font-size: 1em;
+  /* Override nested font-size change */
+}
+ul.square li ul, ul.circle li ul, ul.disc li ul {
+  list-style: inherit;
+}
+ul.square {
+  list-style-type: square;
+}
+ul.circle {
+  list-style-type: circle;
+}
+ul.disc {
+  list-style-type: disc;
+}
+ul.no-bullet {
+  list-style: none;
+}
+
+/* Ordered Lists */
+ol li ul,
+ol li ol {
+  margin-left: 1.37931em;
+  margin-bottom: 0;
+}
+
+/* Definition Lists */
+dl dt {
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+dl dd {
+  margin-bottom: 0.82759em;
+}
+
+/* Abbreviations */
+abbr,
+acronym {
+  text-transform: uppercase;
+  font-size: 90%;
+  color: #333333;
+  border-bottom: 1px dotted #dddddd;
+  cursor: help;
+}
+
+abbr {
+  text-transform: none;
+}
+
+/* Blockquotes */
+blockquote {
+  margin: 0 0 1.37931em;
+  padding: 0.62069em 1.37931em 0 1.31034em;
+  border-left: 5px solid #dddddd;
+}
+blockquote cite {
+  display: block;
+  font-size: 0.89655em;
+  color: #666666;
+}
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+blockquote cite a,
+blockquote cite a:visited {
+  color: #666666;
+}
+
+blockquote,
+blockquote p {
+  line-height: 1.6;
+  color: gray;
+}
+
+/* Microformats */
+.vcard {
+  display: inline-block;
+  margin: 0 0 1.37931em 0;
+  padding: 0.68966em 0.82759em;
+}
+.vcard li {
+  margin: 0;
+  display: block;
+}
+.vcard .fn {
+  font-weight: bold;
+  font-size: 1.03448em;
+}
+
+.vevent .summary {
+  font-weight: bold;
+}
+.vevent abbr {
+  cursor: default;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  padding: 0 0.06897em;
+}
+
+@media only screen and (min-width: 768px) {
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 1.93103em;
+  }
+
+  h2 {
+    font-size: 1.7931em;
+  }
+
+  h3 {
+    font-size: 1.65517em;
+  }
+
+  h4 {
+    font-size: 1.37931em;
+  }
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 14.5px;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+  font-size: 14.5px;
+}
+
+body {
+  background: white;
+  color: #333333;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default;
+}
+
+
+/* Typography resets */
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+}
+
+/* Default Link Styles */
+a {
+  color: #333333;
+  text-decoration: none;
+  line-height: inherit;
+}
+a:hover, a:focus {
+  color: #f76b6a;
+}
+a img {
+  border: none;
+}
+
+/* Default paragraph styles */
+p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 100%;
+  line-height: 1.6;
+  margin-bottom: 1.37931em;
+  text-rendering: optimizeLegibility;
+}
+p aside {
+  font-size: 0.96552em;
+  line-height: 1.35;
+  font-style: italic;
+}
+
+/* Default header styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  line-height: 1.1931em;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-size: 75%;
+  color: gray;
+  line-height: 0;
+}
+
+h1 {
+  font-size: 1.24138em;
+}
+
+h2 {
+  font-size: 1.10345em;
+}
+
+h3 {
+  font-size: 1.31034em;
+}
+
+h4 {
+  font-size: 1.03448em;
+}
+
+h5 {
+  font-size: 1.17241em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+hr {
+  border: solid #eeeeee;
+  border-width: 1px 0 0;
+  clear: both;
+  height: 0;
+}
+
+/* Helpful Typography Defaults */
+em,
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+strong,
+b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+small {
+  font-size: 75%;
+  line-height: inherit;
+}
+
+code {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-weight: bold;
+  color: #7f0a0c;
+}
+
+/* Lists */
+ul,
+ol,
+dl {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 1.37931em;
+  list-style-position: inside;
+  font-family: inherit;
+}
+
+ul, ol {
+  margin-left: 0;
+}
+ul.no-bullet, ol.no-bullet {
+  margin-left: 0;
+}
+
+/* Unordered Lists */
+ul li ul,
+ul li ol {
+  margin-left: 1.37931em;
+  margin-bottom: 0;
+  font-size: 1em;
+  /* Override nested font-size change */
+}
+ul.square li ul, ul.circle li ul, ul.disc li ul {
+  list-style: inherit;
+}
+ul.square {
+  list-style-type: square;
+}
+ul.circle {
+  list-style-type: circle;
+}
+ul.disc {
+  list-style-type: disc;
+}
+ul.no-bullet {
+  list-style: none;
+}
+
+/* Ordered Lists */
+ol li ul,
+ol li ol {
+  margin-left: 1.37931em;
+  margin-bottom: 0;
+}
+
+/* Definition Lists */
+dl dt {
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+dl dd {
+  margin-bottom: 0.82759em;
+}
+
+/* Abbreviations */
+abbr,
+acronym {
+  text-transform: uppercase;
+  font-size: 90%;
+  color: #333333;
+  border-bottom: 1px dotted #dddddd;
+  cursor: help;
+}
+
+
+.nasa-body-loaded {
+  -webkit-transition: padding-bottom 350ms ease;
+  -moz-transition: padding-bottom 350ms ease;
+  -o-transition: padding-bottom 350ms ease;
+  transition: padding-bottom 350ms ease;
+}
+.nasa-body-loaded a {
+  -webkit-transition: color 200ms ease;
+  -moz-transition: color 200ms ease;
+  -o-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+.nasa-body-loaded .nasa-show-search-form.nasa-over-hide,
+.nasa-body-loaded .nasa-transition-1000 {
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+}
+.nasa-body-loaded .nasa-progress-bar-load-shop.nasa-loading .nasa-progress-per {
+  -webkit-transition: all 950ms ease;
+  -moz-transition: all 950ms ease;
+  -o-transition: all 950ms ease;
+  transition: all 950ms ease;
+}
+.nasa-body-loaded .nasa-progress-per,
+.nasa-body-loaded .nasa-transition-800 {
+  -webkit-transition: all 800ms ease;
+  -moz-transition: all 800ms ease;
+  -o-transition: all 800ms ease;
+  transition: all 800ms ease;
+}
+.nasa-body-loaded .nasa-static-sidebar,
+.nasa-body-loaded .nasa-static-sidebar .nasa-sidebar-close a,
+.nasa-body-loaded .nasa-top-cat-filter-wrap-mobile,
+.nasa-body-loaded .nasa-top-cat-filter-wrap-mobile .nasa-close-filter-cat,
+.nasa-body-loaded .nasa-side-sidebar,
+.nasa-body-loaded .nasa-close-menu-mobile,
+.nasa-body-loaded #nasa-menu-sidebar-content,
+.nasa-body-loaded .nasa-close-sidebar,
+.nasa-body-loaded .nasa-transition-700 {
+  -webkit-transition: all 700ms ease;
+  -moz-transition: all 700ms ease;
+  -o-transition: all 700ms ease;
+  transition: all 700ms ease;
+}
+.nasa-body-loaded .yith-wcwl-add-to-wishlist span,
+.nasa-body-loaded .yith-wcwl-add-to-wishlist:before,
+.nasa-body-loaded .product-info .compare:bofore,
+.nasa-body-loaded .nasa-progress-bar-load-shop,
+.nasa-body-loaded .nasa-nav-carousel-wrap,
+.nasa-body-loaded .my-mfp-slide-bottom .zoom-anim-dialog,
+.nasa-body-loaded .my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.nasa-body-loaded .nasa-transition,
+.nasa-body-loaded .nasa-visibility-hidden,
+.nasa-body-loaded #ajax-loading,
+.nasa-body-loaded .div-toggle-sidebar a,
+.nasa-body-loaded .quantity a,
+.nasa-body-loaded .nasa-static-sidebar .nasa-wishlist-title a,
+.nasa-body-loaded .after-add-to-cart-shop_table,
+.nasa-body-loaded .nasa-after-add-to-cart-popup .nasa-table-wrap,
+.nasa-body-loaded .filter-tabs li i,
+.nasa-body-loaded .nasa-product-content-nasa_label-wrap,
+.nasa-body-loaded .nasa-product-content-color-image-wrap,
+.nasa-body-loaded .nasa-product-content-select-wrap,
+.nasa-body-loaded .nasa-toggle-variants,
+.nasa-body-loaded .nasa-fog-variants,
+.nasa-body-loaded #top-bar,
+.nasa-body-loaded .topbar-menu-container ul li a,
+.nasa-body-loaded .nav-wrapper .root-item > a,
+.nasa-body-loaded .nav-wrapper .root-item > a:after,
+.nasa-body-loaded .nasa-megamenu > .nav-dropdown > ul > .menu-item a,
+.nasa-body-loaded .default-menu .menu-item a,
+.nasa-body-loaded .default-menu > .nav-dropdown .sub-menu ul,
+.nasa-body-loaded .vertical-menu .section-title,
+.nasa-body-loaded .vertical-menu-wrapper .default-menu .menu-item,
+.nasa-body-loaded .vertical-menu-wrapper .default-menu .menu-item ul,
+.nasa-body-loaded .vertical-menu-wrapper .menu-item-has-children i.nasa-has-items-child,
+.nasa-body-loaded .header-icons > li a,
+.nasa-body-loaded .follow-icon a i,
+.nasa-body-loaded .nasa-share a i,
+.nasa-body-loaded .header-account li a,
+.nasa-body-loaded .nasa-search-space .circle,
+.nasa-body-loaded .nasa-search-space .handle:after,
+.nasa-body-loaded .nasa-search-space .pe-7s-close,
+.nasa-body-loaded .nasa-top-cat-filter-wrap .nasa-current-note,
+.nasa-body-loaded .nasa-top-cat-filter-wrap .cat-item > .children,
+.nasa-body-loaded .nasa-toggle-top-bar-click i,
+.nasa-body-loaded .product-item .nasa-sc-pdeal-countdown,
+.nasa-body-loaded .badge,
+.nasa-body-loaded .badge.nasa-variants a,
+.nasa-body-loaded .product-quickview-info,
+.nasa-body-loaded .product-item .info .name a,
+.nasa-body-loaded .product-item .info .name span,
+.nasa-body-loaded .nasa-attr-ux-item,
+.nasa-body-loaded .nasa-attr-ux,
+.nasa-body-loaded .nasa-attr-bg,
+.nasa-body-loaded .nasa-attr-bg-img,
+.nasa-body-loaded .nasa-single-product-scroll .nasa-wrap-item-thumb,
+.nasa-body-loaded .product-gallery .btn-wishlist,
+.nasa-body-loaded .product-gallery .btn-compare,
+.nasa-body-loaded .product-gallery .product-video-popup,
+.nasa-body-loaded .product-img .image-overlay,
+.nasa-body-loaded .product-thumbnail .image-overlay,
+.nasa-body-loaded .group-btn-in-list .add_to_cart_text,
+.nasa-body-loaded .group-btn-in-list .nasa-icon,
+.nasa-body-loaded .nasa-item-img .product-img,
+.nasa-body-loaded .quick-view,
+.nasa-body-loaded .nasa-icon-text,
+.nasa-body-loaded .nasa-widget-img:before,
+.nasa-body-loaded .nasa-product-grid .btn-wishlist,
+.nasa-body-loaded .nasa-product-grid .add_to_cart_text,
+.nasa-body-loaded .login-register-close,
+.nasa-body-loaded #mobile-navigation a.accordion,
+.nasa-body-loaded .nasa-filter-color-border,
+.nasa-body-loaded .nasa-filter-image-span,
+.nasa-body-loaded .nasa-li-filter-size,
+.nasa-body-loaded .nasa-instagram li,
+.nasa-body-loaded .nasa-search .fa,
+.nasa-body-loaded .post-date-wrapper,
+.nasa-body-loaded .reply a,
+.nasa-body-loaded .woocommerce-MyAccount-navigation-link a,
+.nasa-body-loaded .woocommerce-MyAccount-navigation-link a:before,
+.nasa-body-loaded .checkout-breadcrumb span,
+.nasa-body-loaded .title-cart,
+.nasa-body-loaded .title-checkout,
+.nasa-body-loaded .title-thankyou,
+.nasa-body-loaded .nasa-coupon-wrap,
+.nasa-body-loaded .nasa-marker-icon-bg,
+.nasa-body-loaded .easypin-popover,
+.nasa-body-loaded .nasa-wrap-active-top a:before,
+.nasa-body-loaded .nasa-actived-filter .nasa-filter-color-span:after,
+.nasa-body-loaded .nasa-widget-toggle,
+.nasa-body-loaded .nasa-top-row-filter li i,
+.nasa-body-loaded .nasa-top-row-filter li i:before,
+.nasa-body-loaded .warpper-mobile-search,
+.nasa-body-loaded .nasa-compare-list-bottom,
+.nasa-body-loaded .nasa-compare-item .nasa-img-compare,
+.nasa-body-loaded .nasa-compare-item .nasa-no-image,
+.nasa-body-loaded .nasa-remove-compare,
+.nasa-body-loaded .nasa-static-group-btn,
+.nasa-body-loaded .nasa-static-group-btn a,
+.nasa-body-loaded input[type="submit"].dokan-btn,
+.nasa-body-loaded a.dokan-btn,
+.nasa-body-loaded .dokan-btn,
+.nasa-body-loaded #dokan-store-listing-filter-form-wrap .apply-filter #apply-filter-btn,
+.nasa-body-loaded .nasa-sidebar-single-product,
+.nasa-body-loaded .toggle-sidebar-shop,
+.nasa-body-loaded .icon-next-prev,
+.nasa-body-loaded .nasa-post-cats-wrap a,
+.nasa-body-loaded .nasa-blog-info,
+.nasa-body-loaded .brands-item img,
+.nasa-body-loaded .product-category .header-title h3,
+.nasa-body-loaded .nasa-sc-p-title a,
+.nasa-body-loaded .nasa-tab-icon,
+.nasa-body-loaded .nasa-classic-style a,
+.nasa-body-loaded .nasa-classic-style a:before,
+.nasa-body-loaded .nasa-classic-style a:after,
+.nasa-body-loaded .nasa-accordion-title a,
+.nasa-body-loaded .nasa-accordion-title a:before,
+.nasa-body-loaded .nasa-accordion-title a:after,
+.nasa-body-loaded .nasa-shortcode-parent-term a,
+.nasa-body-loaded .nasa-nav-icon-slick,
+.nasa-body-loaded .nasa-list-category a,
+.nasa-body-loaded .product-deal-special-title a,
+.nasa-body-loaded .item-slick,
+.nasa-body-loaded .item-slick:before,
+.nasa-body-loaded .nasa-nav-arrow,
+.nasa-body-loaded .nasa-nav-arrow:before,
+.nasa-body-loaded .service-block,
+.nasa-body-loaded .service-block .box,
+.nasa-body-loaded .service-block .service-icon,
+.nasa-body-loaded .nasa-category-horizontal-1 .header-title,
+.nasa-body-loaded .nasa-category-horizontal-2 .header-title,
+.nasa-body-loaded .nasa-category-horizontal-1 .product-category,
+.nasa-body-loaded .nasa-category-horizontal-1 .hover-overlay:after,
+.nasa-body-loaded .hover-overlay,
+.nasa-body-loaded .grid-product-category .nasa-item-wrap,
+.nasa-body-loaded .blog-image-attachment:after,
+.nasa-body-loaded .nasa-blog-item-wrap,
+.nasa-body-loaded .wpcf7 input[type="button"],
+.nasa-body-loaded .wpcf7 input[type="submit"],
+.nasa-body-loaded .progress-bar .bar-number,
+.nasa-body-loaded .woocommerce-notices-wrapper,
+.nasa-body-loaded .nasa-invisible,
+.nasa-body-loaded .load-more,
+.nasa-body-loaded .load-more-text,
+.nasa-body-loaded .load-more-icon,
+.nasa-body-loaded .nasa-tip-content,
+.nasa-body-loaded .nasa-add-to-cart-fixed,
+.nasa-body-loaded .nasa-fixed-product-variations-wrap,
+.nasa-body-loaded .nasa-attr-bg,
+.nasa-body-loaded .nasa-attr-text,
+.nasa-body-loaded .nasa-wrap-slick-slide-products .nasa-nav-icon-slick,
+.nasa-body-loaded .nasa-product-slick-item-wrap,
+.nasa-body-loaded .nasa-product-slick-item-wrap .title-wrap,
+.nasa-body-loaded .nasa-product-slick-item-wrap .title-wrap a,
+.nasa-body-loaded .nasa-tabs a,
+.nasa-body-loaded .accordion:after,
+.nasa-body-loaded .nasa-variation-filters a:after,
+.nasa-body-loaded .widget_rating_filter .wc-layered-nav-rating a:after,
+.nasa-body-loaded .item-deal-thumb:before,
+.nasa-body-loaded .tparrows.custom,
+.nasa-body-loaded .nasa-single-product-thumbnails img,
+.nasa-body-loaded .nasa-cat-thumb img,
+.nasa-body-loaded .banner-inner,
+.nasa-body-loaded .nasa-labels-filter-accordion,
+.nasa-body-loaded .nasa-pagination.style-2 .page-numbers a,
+.nasa-body-loaded .nasa-hoz-buttons .nasa-product-grid .add-to-cart-grid,
+.nasa-body-loaded .nasa-product-grid .cart-icon.nasa-df-plus:before,
+.nasa-body-loaded .nasa-product-grid .cart-icon.nasa-df-plus:after,
+.nasa-body-loaded .nasa-hoz-buttons .nasa-product-grid .btn-wishlist:before,
+.nasa-body-loaded .nasa-hoz-buttons .nasa-product-grid .quick-view:before,
+.nasa-body-loaded .nasa-hoz-buttons .nasa-product-grid .btn-compare:before,
+.nasa-body-loaded .nasa-hoz-buttons .nasa-product-grid .btn-wishlist .nasa-icon,
+.nasa-body-loaded .nasa-hoz-buttons .nasa-product-grid .quick-view .nasa-icon,
+.nasa-body-loaded .nasa-hoz-buttons .nasa-product-grid .btn-compare .nasa-icon,
+.nasa-body-loaded .nasa-close-search,
+.nasa-body-loaded .nasa-filter-status:before,
+.nasa-body-loaded .nasa-filter-status:after,
+.nasa-body-loaded .nasa-slick-simple-item .image-wrap img,
+.nasa-body-loaded .slick-dots li {
+  -webkit-transition: all 350ms ease;
+  -moz-transition: all 350ms ease;
+  -o-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+.nasa-body-loaded .nasa-login-register-warper,
+.nasa-body-loaded .nasa-quickview-view-detail,
+.nasa-body-loaded .products-arrow .next-prev-buttons .dropdown-wrap,
+.nasa-body-loaded .nasa-cookie-notice-container,
+.nasa-body-loaded .toggle-sidebar-dokan,
+.nasa-body-loaded .mfp-wrap .nasa-bot-to-top,
+.nasa-body-loaded .product-video-popup,
+.nasa-body-loaded .product_meta .sku,
+.nasa-body-loaded .product_meta a,
+.nasa-body-loaded .nasa-360-degree-popup,
+.nasa-body-loaded .nasa-slider-items-margin.nasa-small-center-mode .slick-slide:before {
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.nasa-body-loaded .nasa-top-sidebar-2.slick-initialized.nasa-inited:not(.nasa-transition-none),
+.nasa-body-loaded .nasa-top-sidebar-2.slick-initialized.nasa-inited:not(.nasa-transition-none) .widget.slick-slide {
+  -webkit-transition: 400ms ease-in-out;
+  -moz-transition: 400ms ease-in-out;
+  -o-transition: 400ms ease-in-out;
+  transition: 400ms ease-in-out;
+}
+.nasa-body-loaded .nasa-header-sticky .sticky-wrapper,
+.nasa-body-loaded .top-bar .nasa-menus-account .sub-menu,
+.nasa-body-loaded .nasa-select-languages .nasa-list-languages,
+.nasa-body-loaded .nasa-select-currencies .wcml-dropdown li.wcml-cs-active-currency > ul,
+.nasa-body-loaded .nasa-attr-ux-color,
+.nasa-body-loaded .nasa-attr-ux-label,
+.nasa-body-loaded .nasa-attr-ux-label .nasa-attr-text,
+.nasa-body-loaded .nasa-label-small-square-1 .nasa-attr-ux-label:after,
+.nasa-body-loaded .nasa-color-small-square .nasa-attr-ux-color:after,
+.nasa-body-loaded .nasa-reset-filters-top,
+.nasa-body-loaded .button-in-wishlist,
+.nasa-body-loaded .nasa-ignore-variation-item.nasa-ignore-brand-item:after {
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+.nasa-body-loaded .nasa-static-sidebar .nasa-sidebar-close a:before,
+.nasa-body-loaded .product-remove a,
+.nasa-body-loaded .nav-dropdown,
+.nasa-body-loaded .nasa-vertical-header .vertical-menu-container,
+.nasa-body-loaded .nasa-show-search-form.nasa-over-hide.nasa-fadeInDown,
+.nasa-body-loaded .nasa-show-search-form.nasa-over-hide.nasa-fadeInUp,
+.nasa-body-loaded .nasa-show-search-form.nasa-over-hide.nasa-fadeIn,
+.nasa-body-loaded .product-info .entry-title a,
+.nasa-body-loaded .nasa-toggle-attr-select:before,
+.nasa-body-loaded .nasa-toggle-attr-select:after,
+.nasa-body-loaded .nasa-close-variants:before,
+.nasa-body-loaded .nasa-close-variants:after,
+.nasa-body-loaded .nasa-toogle-sidebar-classic,
+.nasa-body-loaded .nasa-toogle-sidebar-classic:before,
+.nasa-body-loaded .nasa-toogle-sidebar-classic:after,
+.nasa-body-loaded .nasa-close-menu-mobile:before,
+.nasa-body-loaded .widget a,
+.nasa-body-loaded .tagcloud a,
+.nasa-body-loaded .nasa-toggle-widget:before,
+.nasa-body-loaded .nasa-toggle-widget:after,
+.nasa-body-loaded .nasa-close-sidebar:before,
+.nasa-body-loaded .cat-links-archive a,
+.nasa-body-loaded .nasa-meta-tags a,
+.nasa-body-loaded .navigation-paging a,
+.nasa-body-loaded .navigation-image a,
+.nasa-body-loaded li.featured-item a,
+.nasa-body-loaded li.featured-item img,
+.nasa-body-loaded .nasa-comment-count,
+.nasa-body-loaded .nasa-close-filter-cat:before,
+.nasa-body-loaded .nasa-quickview-product-deal-countdown,
+.nasa-body-loaded .nasa-detail-product-deal-countdown,
+.nasa-body-loaded .load-more-masonry,
+.nasa-body-loaded .my-mfp-zoom-in .mfp-content,
+.nasa-body-loaded a.nasa-close-wrap:before,
+.nasa-body-loaded a.nasa-close-wrap:after,
+.nasa-body-loaded .nasa-single-arrow,
+.nasa-body-loaded .nasa-static-sidebar .btn-mini-cart a,
+.nasa-body-loaded .nasa-table-compare .add-to-cart-grid,
+.nasa-body-loaded #submit,
+.nasa-body-loaded button,
+.nasa-body-loaded .button,
+.nasa-body-loaded input[type="submit"],
+.nasa-body-loaded .nasa-ct-fields-toggle,
+.nasa-body-loaded .nasa-ct-fields-toggle:after,
+.nasa-body-loaded .nasa-img-loading,
+.nasa-body-loaded .nasa-toggle-top-bar-click:before,
+.nasa-body-loaded .nasa-toggle-top-bar-click:after,
+.nasa-body-loaded .nasa-stclose {
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.nasa-body-loaded .vertical-menu-wrapper .root-item,
+.nasa-body-loaded .vertical-menu-wrapper .root-item > a,
+.nasa-body-loaded #customer_details .form-row label[for] {
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+.nasa-body-loaded .nasa-hoz-buttons .nasa-product-grid .quick-view,
+.nasa-body-loaded .nasa-hoz-buttons .nasa-product-grid .btn-compare,
+.nasa-body-loaded .nasa-hoz-buttons .nasa-product-grid .btn-link,
+.nasa-body-loaded .nasa-product-grid .btn-wishlist {
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.nasa-body-loaded .my-mfp-zoom-in .mfp-content {
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.nasa-body-loaded .my-mfp-zoom-in.mfp-bg .mfp-content {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+.nasa-body-loaded .nasa-tabs-content .nasa-panel {
+  -webkit-transition: 250ms ease-in-out;
+  -moz-transition: 250ms ease-in-out;
+  -o-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+.nasa-body-loaded .nasa-tabs-content .nasa-panel.active {
+  -webkit-transition: 250ms ease-in-out 280ms;
+  -moz-transition: 250ms ease-in-out 280ms;
+  -o-transition: 250ms ease-in-out 280ms;
+  transition: 250ms ease-in-out 280ms;
+}
+.nasa-body-loaded .nasa-tabs-content.animation-none .nasa-panel, .nasa-body-loaded .nasa-tabs-content.woocommerce-tabs .nasa-panel {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.nasa-body-loaded .nasa-tabs-content.animation-none .nasa-panel.active, .nasa-body-loaded .nasa-tabs-content.woocommerce-tabs .nasa-panel.active {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.nasa-body-loaded .nasa-elements-wrap {
+  -webkit-transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .2s ease-out, opacity .3s .2s ease-out, transform .3s .2s ease-out;
+  -moz-transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .2s ease-out, opacity .3s .2s ease-out, transform .3s .2s ease-out;
+  -ms-transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .2s ease-out, opacity .3s .2s ease-out, transform .3s .2s ease-out;
+  -o-transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .2s ease-out, opacity .3s .2s ease-out, transform .3s .2s ease-out;
+  transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .25s ease-out, opacity .3s .2s ease-out, transform .3s .2s ease-out;
+}
+.nasa-body-loaded .nasa-show-search-form.nasa-over-hide.nasa-modern-layout {
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.nasa-body-loaded .hover-fade img {
+  -webkit-transition: opacity 800ms ease;
+  -moz-transition: opacity 800ms ease;
+  -o-transition: opacity 800ms ease;
+  transition: opacity 800ms ease;
+}
+.nasa-body-loaded .hover-zoom img {
+  -webkit-transition: all 1500ms ease;
+  -moz-transition: all 1500ms ease;
+  -o-transition: all 1500ms ease;
+  transition: all 1500ms ease;
+}
+.nasa-body-loaded .hover-to-top img {
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.nasa-body-loaded .hover-flip img {
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -moz-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -ms-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -o-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+.nasa-body-loaded .hover-bottom-to-top img,
+.nasa-body-loaded .hover-top-to-bottom img {
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+}
+.nasa-body-loaded .hover-left-to-right img,
+.nasa-body-loaded .hover-right-to-left img {
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.nasa-body-loaded .woocommerce-variation-add-to-cart-disabled {
+  -webkit-transition: opacity 350ms ease;
+  -moz-transition: opacity 350ms ease;
+  -o-transition: opacity 350ms ease;
+  transition: opacity 350ms ease;
+}
+.nasa-body-loaded .nasa-color-big-square .nasa-attr-ux-color,
+.nasa-body-loaded .nasa-label-big-square .nasa-attr-ux-label,
+.nasa-body-loaded .nasa-image-square-caption .nasa-attr-ux-image {
+  -webkit-transition: border-color 250ms ease;
+  -moz-transition: border-color 250ms ease;
+  -o-transition: border-color 250ms ease;
+  transition: border-color 250ms ease;
+}
+.nasa-body-loaded .nasa-slick-slider,
+.nasa-body-loaded .easyzoom .easyzoom-flyout,
+.nasa-body-loaded .mfp-bg {
+  -webkit-transition: opacity 300ms ease;
+  -moz-transition: opacity 300ms ease;
+  -o-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+.nasa-body-loaded .nasa-product-grid .add-to-cart-grid {
+  -webkit-transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .45s ease-out, opacity .3s .45s ease-out, -webkit-transform .3s .45s ease-out;
+  -moz-transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .45s ease-out, opacity .3s .45s ease-out, -moz-transform .3s .45s ease-out;
+  -ms-transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .45s ease-out, opacity .3s .45s ease-out, -ms-transform .3s .45s ease-out;
+  -o-transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .45s ease-out, .3s .45s ease-out, -o-transform .3s .45s ease-out;
+  transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .45s ease-out, opacity .3s .45s ease-out, transform .3s .45s ease-out;
+}
+.nasa-body-loaded .nasa-product-grid .quick-view {
+  -webkit-transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .25s ease-out, opacity .3s .25s ease-out, -webkit-transform .3s .25s ease-out;
+  -moz-transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .25s ease-out, opacity .3s .25s ease-out, -moz-transform .3s .25s ease-out;
+  -ms-transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .25s ease-out, opacity .3s .25s ease-out, -ms-transform .3s .25s ease-out;
+  -o-transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .25s ease-out, opacity .3s .25s ease-out, -o-transform .3s .25s ease-out;
+  transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .25s ease-out, opacity .3s .25s ease-out, transform .3s .25s ease-out;
+}
+.nasa-body-loaded .nasa-product-grid .btn-compare {
+  -webkit-transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .35s ease-out, opacity .3s .35s ease-out, -webkit-transform .3s .35s ease-out;
+  -moz-transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .35s ease-out, opacity .3s .35s ease-out, -moz-transform .3s .35s ease-out;
+  -ms-transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .35s ease-out, opacity .3s .35s ease-out, -ms-transform .3s .35s ease-out;
+  -o-transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .35s ease-out, .3s .35s ease-out, -o-transform .3s .35s ease-out;
+  transition: color .3s .001s ease-out, background .1s .001s ease-out, visibility .3s .35s ease-out, opacity .3s .35s ease-out, transform .3s .35s ease-out;
+}
+.nasa-body-loaded .nasa-archive-product-warp {
+  background: transparent;
+}
+.nasa-body-loaded .crazy-load-slider {
+  display: none;
+}
+.nasa-body-loaded .nasa-transition-none {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .nasa-body-loaded .columns.nasa-top-sidebar,
+  .nasa-body-loaded .dokan-store-sidebar,
+  .nasa-body-loaded .col-sidebar {
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+  }
+  .nasa-body-loaded .nasa-archive-product-content .nasa-push-cat-filter,
+  .nasa-body-loaded .black-window-mobile {
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+  }
+  .nasa-body-loaded .nasa-mobile-fixed,
+  .nasa-body-loaded .nasa-header-icons-wrap {
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease;
+  }
+  .nasa-body-loaded .nasa-mobile-menu-icon {
+    -webkit-transition: all 100ms ease;
+    -moz-transition: all 100ms ease;
+    -o-transition: all 100ms ease;
+    transition: all 100ms ease;
+  }
+}
+.nasa-total-condition-hint,
+.nasa-subtotal-condition {
+  -webkit-transition: width 500ms ease;
+  -moz-transition: width 500ms ease;
+  -o-transition: width 500ms ease;
+  transition: width 500ms ease;
+}
+
+.nasa-enable-wow .wow {
+  visibility: hidden;
+}
+.nasa-enable-wow .wow.animated {
+  visibility: visible;
+}
+.nasa-enable-wow .wow.animated.slick-slide, .nasa-enable-wow .wow.animated.nasa-visible {
+  visibility: visible !important;
+}
+.nasa-enable-wow .nasa-bg-gd {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: nasa-bg-gradient;
+  animation-timing-function: linear;
+  background: linear-gradient(to right, #f9f9f9 8%, #eeeeee 18%, #f9f9f9 38%);
+}
+.nasa-enable-wow.nasa-body-loaded .nasa-bg-gd {
+  background: transparent;
+}
+
+@keyframes nasa-bg-gradient {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100em 0;
+  }
+}
+
